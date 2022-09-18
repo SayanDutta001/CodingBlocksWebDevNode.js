@@ -1,0 +1,88 @@
+<!-- DOCTYPE comment tells the browser that the current file is a HTML5 document -->
+<!DOCTYPE html>
+
+<!-- purpose of html : structure the webpage, not for styling the website -->
+<!-- html is not a programming language -->
+<!-- html is very forgiving, doesn't check for any errors. No decision making capabilities. -->
+<!-- Inside the HTML tag there's "lang" attribute that allows to specify the language of the current web page -->
+<html lang="en">
+
+<head>
+    <!-- head contains the internal styles, scripts, meta info and title of the webpage -->
+    <!-- meta tags contains data about the webpage -->
+
+    <!-- charset tells the browser the characterset that'll be present in the webpage -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_BASICS</title>
+</head>
+
+<body>
+    <!-- the content that is to be rendered is present here. The content within the viewport-->
+
+    <h1>
+        <!-- heading tag -->
+        <!-- importance : h1 > h2 > h3 > h4 > h5 > h6 -->
+    </h1>
+    <h2></h2>
+    <h3></h3>
+    <h4></h4>
+    <h5></h5>
+    <h6></h6>
+    <!-- 
+        heading, paragraph tags have a default styling. The padding, margins, font-weight is somewhat different from whatever written without tags. 
+        Moreover, after every heading, paragraph tag, a new line is added. 
+        The content inside the tag also has added semantics.
+    -->
+
+    <p> 
+        <!-- This is a Paragraph tag -->
+        <!-- There's a line-break after the p tag ends </p> -->
+    </p>
+
+    <!-- The Line won't have a Line Break. Line after another Line. -->
+
+    <!-- (line) break tag, to add a new line -->
+    <br> 
+
+    <i>
+        <!-- Italics Tag -->
+    </i>
+
+    <b>
+        <!-- Bold Tag -->
+    </b>
+
+    <u>
+        <!-- Underline Tag -->
+    </u>
+
+    <s>
+        <!-- Strikethrough tag -->
+    </s>
+    <!-- 
+        Block vs Inline Elements :
+        Blocks Elements : Take up the entire horizontal space.
+        Inline Elements : Take up the space required for the content.
+    -->
+
+
+</body>
+
+</html>
+
+<!-- 
+    Inside an HTML document we can have multiple html tags with different lang attribute values.
+    For eg.:
+    hindi language for the lang attribute, so if the default langauge of our browser is hindi the html block with 
+    lang="en" will be ignored and the html block with lang="hi" will be rendered.
+    
+    <html lang="en"> ignored
+
+    </html> 
+    
+    <html lang="hi"> rendered
+
+    </html> 
+-->

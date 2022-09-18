@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>iFrame</h2>
+
+    <!-- set a name attribute for the iframe and open other links in that iFrame -->
+    <a href="https://google.com" target="frame1">Go To Google.com</a>
+    <br>
+
+    <a href="innerLink.html" target="frame1">Go to Inner Link</a>
+    <br>
+
+    <!-- iFrames are inline elements -->
+    <br>
+    <iframe name="frame1" src="index.html" width="400" height="200" frameborder="1"></iframe>
+
+    <!-- 
+        if we try to load the same page in its own iFrame there won't be any recursion, the browser will detect and avoid it itself, opened only once upto 1 subdocument level
+     -->
+    <iframe src="iframes.html" width="400" height="200" frameborder="1"></iframe>
+    <!-- 
+        too many iframes reduce the performane of the webpage, it is just like opening a new tab. 
+        iframes require JS context to work + overhead of loading the new html document. 
+    -->
+</body>
+
+</html>

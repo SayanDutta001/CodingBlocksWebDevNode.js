@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    row1
+                </td>
+                <td>
+                    row1
+                </td>
+            </tr>
+        </thead>
+
+        <tr>
+            <td>
+                row2
+            </td>
+            <td>
+                row2
+            </td>
+        </tr>
+    </table>
+
+    <table border="1" cellspacing="10" cellpadding="10" align="center">
+        <thead>
+            <tr>
+                <th colspan="2">The table header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>The table body</td>
+                <td>with two columns</td>
+            </tr>
+            <tr>
+                <td>abc</td>
+                <!-- take two rows -->
+                <td rowspan="2">def</td>
+            </tr>
+            <tr>
+                <td>fgh</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

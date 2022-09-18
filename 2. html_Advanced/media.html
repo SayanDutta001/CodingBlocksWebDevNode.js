@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- alt attribute for voice-assistants and also as a message if the photo doesn't get loaded in the browser -->
+    <!-- if both height and width is set without much calculation, the aspect ratio gets distorted -->
+    <img src="image-link" alt="alternate message">
+
+    <!-- mordern browsers disable autoplay -->
+    <!-- preload="none" -> no metadata of the video loaded, the length of the video, the thumbnail -> nothing loaded -->
+    <!--     
+        preload="metadata" -> only length and thumbnail downloaded, then when the video is played the video gets downloaded slowly  
+    -->
+    <!-- preload="auto"(default) -> video downloaded as soon as webpage gets loaded -->
+    <!-- if video is optional then prefer using preload="metadata" -->
+    <video src="video-link" controls height="" width="" autoplay muted preload=""></video>
+
+    <audio src="" controls autoplay></audio>
+    <!-- 
+        previously autoplay attribute without controls attribute was used for spams. The audio would play and there will be no option to stop the audio unless muted.
+    -->
+
+
+</body>
+</html>

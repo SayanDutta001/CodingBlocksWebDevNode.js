@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="button" value="">
+        <br>
+        <input type="password" name="" id="">
+        <!-- if the type is changed to text, the password is visible -->
+        <!-- document.getElementById(id).value is another way that the password becomes visible -->
+        <br>
+        <input type="email" name="" id="">
+        <br>
+        <input min=100 max=200 type="number" name="" id="">
+        <br>
+        <input type="date" name="" id="">
+        <br>
+        <input type="color" name="" id="">
+        <br>
+        <input type="file" name="" id="">
+        <br>
+        <input type="radio" name="number" id="10"><label for="10">10</label>
+        <input type="radio" name="number" id="20"><label for="20">20</label>
+        <input type="radio" name="number" id="30"><label for="30">30</label>
+        <br>
+
+        <!-- label gives a wider region for clicking the options -->
+        <input type="checkbox" name="num" id="i"><label for="i">i</label>
+        <input type="checkbox" name="num" id="ii"><label for="ii">ii</label>
+        <input type="checkbox" name="num" id="iii"><label for="iii">iii</label>
+        <br>
+        <!--
+            Use of radio and checkbox : radio used when we have to choose one out of many and checkbox is used for multiple answers 
+        -->
+
+        <!-- input element whose tag name is not input -->
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <select name="" id="">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+        </select>
+        <select name="" id="" multiple>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+        </select>
+    </form>
+
+    <form action="https://google.com/search">
+        <input type="text" name="query">
+        <button type="submit">Search</button>
+        <button type="reset">Clear</button>
+    </form>
+</body>
+
+</html>

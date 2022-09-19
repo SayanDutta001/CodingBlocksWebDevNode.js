@@ -10,6 +10,16 @@
 
 <body>
     <!-- Anchor Tag for hyperlinks -->
+    <!-- <a href="link" hreflang="en" target="" type="" ping="url" download>  -->
+    <!-- "href" attribute is for specifying the URL of the page the link goes to. -->
+    <!-- "hreflang" attribute is for specifying the language of the linked document. -->
+    <!-- "target" attribute is for specifying where to open the linked document. -->
+    <!-- "type" attribute is for specifying the media type of the linked document. -->
+    <!-- 
+        "ping" is for specifying a space-separated list of URLs to which, when the link is followed, post requests with the body ping 
+        will be sent by the browser (in the background). Typically used for tracking. 
+    -->
+    <!-- "download" specifies that the target will be downloaded when a user clicks on the hyperlink. -->
     <a href="https://google.com">Go To Google.com</a>
     <br>
 
@@ -19,6 +29,12 @@
 
     <!-- anchor tag with target attribute -->
     <a href="http://example.com" target="_blank">Open Link in a New Tab</a>
+    <!-- 
+        target="blank" -> Process per site, no new process created, new page works on top of the old process.
+        If the new page opened via _blank has a lot of computations then the old page will also suffer. Performance Affected.
+        The new and the old page works on the same process. Use rel =”noopener” to make new process for the new page. 
+    -->
+    
     <!-- _self : current window or current tab itself -->
     <!-- _blank : in a new tab but can be configured to be opened in a new window -->
     <!-- _parent, _top -> related to the working of frames  -->
@@ -26,8 +42,24 @@
     <a href="https://google.com" target="_parent">Open this link in the parent tab from the iFrame</a>
     <!-- target=_parent opens the page in the immediate parent frame -->
     <!-- target=_top opens the page in the topmost parent browsing context, that may be current the browser tab -->
-
     
+    
+    <!-- 
+        Uses :
+        1. use an image as a link:
+        <a href="https://www.w3schools.com">
+            <img border="0" alt="W3Schools" src="logo_w3s.gif" width="100" height="100">`
+        </a>
+
+        2. link to an email address: 
+        <a href="mailto:someone@example.com">Send email</a>
+
+        3. link to a phone number:
+        <a href="tel:+4733378901">+47 333 78 901</a>
+
+        4. to link to a JavaScript:
+        <a href="javascript:alert('Hello World!');">Execute JavaScript</a>
+     -->
 </body>
 
 </html>

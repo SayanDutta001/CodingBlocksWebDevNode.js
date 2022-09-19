@@ -1,25 +1,57 @@
-<!-- DOCTYPE comment tells the browser that the current file is a HTML5 document -->
+<!-- DOCTYPE comment is a type declaration statement that tells the browser that the current file is a HTML5 document -->
 <!DOCTYPE html>
 
 <!-- purpose of html : structure the webpage, not for styling the website -->
-<!-- html is not a programming language -->
-<!-- html is very forgiving, doesn't check for any errors. No decision making capabilities. -->
+<!-- html is not a programming language because no decision making capabilities-->
+<!-- html is very forgiving, doesn't check for any errors. No facility of checking the presence of an error -->
+
+<!-- <html> is the root element of the html document -->
 <!-- Inside the HTML tag there's "lang" attribute that allows to specify the language of the current web page -->
-<html lang="en">
+
+
+<!-- 
+    Inside an HTML document we can have multiple html tags with different lang attribute values.
+    For eg.:
+    hindi language for the lang attribute, so if the default langauge of our browser is hindi the html block with 
+    lang="en" will be ignored and the html block with lang="hi" will be rendered.
+    
+    <html lang="en">  -> ignored
+        <head>...</head>
+        <body>...</body>
+    </html> 
+    
+    <html lang="hi"> -> rendered
+        <head>...</head>
+        <body>...</body>
+    </html> 
+-->
+
+<html lang="en"> <!-- lang attribute specifies the type of the content language the html5 document contains-->
 
 <head>
+    <!-- The <head> tag contains additional information about the webpage wrapped in meta tags, links of various files i.e 
+    the stylesheet, title of the webpage and so on. -->
+    
     <!-- head contains the internal styles, scripts, meta info and title of the webpage -->
     <!-- meta tags contains data about the webpage -->
 
     <!-- charset tells the browser the characterset that'll be present in the webpage -->
-    <meta charset="UTF-8">
+    
+    <!-- 
+        meta tags contains information about the content of the document, the kind of information the webpage content contains that 
+        tells the search engine about the page. Used for SEO(s).
+	-->
+    <meta charset="UTF-8"> <!-- character set : character encoding 8 bits, supports emojis and other updated stuffs -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- used for responsiveness of the webpage -->
+    
+    <!-- <title> specifies the title of the webpage in the browser tab. -->
     <title>HTML_BASICS</title>
 </head>
 
 <body>
-    <!-- the content that is to be rendered is present here. The content within the viewport-->
+    <!-- <body> tag contains the content of the webpage, the content that should be rendered in the webpage. -->
+    <!-- the content that is to be rendered is present here. The content is rendered within the viewport-->
 
     <h1>
         <!-- heading tag -->
@@ -37,21 +69,44 @@
     -->
 
     <p> 
-        <!-- This is a Paragraph tag -->
-        <!-- There's a line-break after the p tag ends </p> -->
+    <!-- This is a Paragraph tag.
+         used for non-formatted paragraph content, Browsers automatically add a single blank line(new line) before and after each <p> element. 
+         But it doesn’t support extra blank spaces and line breaks.
+         There's a line-break after the p tag ends.
+         Inside <p> we can use tags like :
+            1. <code> -> (Defines a piece of computer code), 
+            2. <samp> -> (Defines sample output from a computer program), 
+            3. <kbd> -> (Defines keyboard input), 
+            4. <var> -> (Defines a variable).
+    -->
     </p>
+    
+    The Line won't have a Line Break. Line after another Line.
 
-    <!-- The Line won't have a Line Break. Line after another Line. -->
-
-    <!-- (line) break tag, to add a new line -->
+    <pre> 
+        <!-- 
+            text in a <pre> element is displayed in a fixed-width font, and the text preserves both spaces and line breaks. 
+            The text will be displayed exactly as written in the HTML source code.
+        -->
+    </pre>
+    
+    <!-- (line) break tag, to add a new line. It is actually an empty container. -->
     <br> 
+    
+    <!-- 
+         Horizontal Tag -> to add a horizontal line 
+         (a thin container with margin and outline).
+    -->
+    <hr>
 
     <i>
         <!-- Italics Tag -->
+        <!-- Semantic Version : <em> </em> -->
     </i>
 
     <b>
         <!-- Bold Tag -->
+        <!-- Semantic Version : <strong> </strong> -->
     </b>
 
     <u>
@@ -61,28 +116,60 @@
     <s>
         <!-- Strikethrough tag -->
     </s>
+    <q> 
+        <!-- Quotes tag -->
+    </q>
+    
     <!-- 
         Block vs Inline Elements :
-        Blocks Elements : Take up the entire horizontal space.
-        Inline Elements : Take up the space required for the content.
+        Blocks Elements : Take up the entire horizontal space, the whole width of the body. eg.: <h1>, <div>, <p>. 
+        Inline Elements : Take up the space required for the content. Takes the width of the content. eg.: <a>, <span>, <img>, <button>. 
     -->
-
+    
+    <div>
+        <!-- Empty Block Container -->
+    </div>
+    
+    <span> 
+        <!-- Empty Inline Container -->
+    </span>
+    
+    <!-- 
+        To center a child element that is a span element inside a parent element that is necessarily a div element, we can use : (text-align:center;)
+        Property to be applied on the parent element which has to be as a block element. 
+        eg.: we have an image inside a div which has width of 100vw, we can do : 
+                    div { text-align : center; } → to center the image inside the div.  
+    -->
+    
+    <!-- html semantic tags : -->
+    <nav> 
+        <!-- Nav Bar -->
+    </nav>
+    
+    <header> 
+       <!-- Header of the page -->
+    </header>
+    
+    <main> 
+       <!-- Main Section of the page -->
+    </main>
+    
+    <section> 
+       <!-- various sections of the page -->
+    </section>
+    
+    <article> 
+       <!-- Atricles of the page -->
+    </article>
+    
+    <aside> 
+       <!-- Aside Section -->
+    </aside>
+    
+    <footer> 
+       <!-- Footer of the page -->
+    </footer>
 
 </body>
 
 </html>
-
-<!-- 
-    Inside an HTML document we can have multiple html tags with different lang attribute values.
-    For eg.:
-    hindi language for the lang attribute, so if the default langauge of our browser is hindi the html block with 
-    lang="en" will be ignored and the html block with lang="hi" will be rendered.
-    
-    <html lang="en"> ignored
-
-    </html> 
-    
-    <html lang="hi"> rendered
-
-    </html> 
--->

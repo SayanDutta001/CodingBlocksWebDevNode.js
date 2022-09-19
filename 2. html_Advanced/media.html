@@ -7,9 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- alt attribute for voice-assistants and also as a message if the photo doesn't get loaded in the browser -->
+    <!-- alt attribute for accessibilty properties voice-assistants and also as a message if the photo doesn't get loaded in the browser -->
     <!-- if both height and width is set without much calculation, the aspect ratio gets distorted -->
-    <img src="image-link" alt="alternate message">
+    <img src="image-link" width="" height="" alt="alternate message">
 
     <!-- mordern browsers disable autoplay -->
     <!-- preload="none" -> no metadata of the video loaded, the length of the video, the thumbnail -> nothing loaded -->
@@ -18,7 +18,7 @@
     -->
     <!-- preload="auto"(default) -> video downloaded as soon as webpage gets loaded -->
     <!-- if video is optional then prefer using preload="metadata" -->
-    <video src="video-link" controls height="" width="" autoplay muted preload=""></video>
+    <video src="video-link" height="" width="" controls autoplay muted preload=""></video>
 
     <audio src="" controls autoplay></audio>
     <!-- 

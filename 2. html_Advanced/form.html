@@ -12,20 +12,42 @@
     <form action="">
         <input type="button" value="">
         <br>
-        <input type="password" name="" id="">
-        <!-- if the type is changed to text, the password is visible -->
-        <!-- document.getElementById(id).value is another way that the password becomes visible -->
+        
+        <label for="firstName">Enter your name :</label>
+        <input type="text" name="firstName" placeholder="Enter your First Name">
+		<label for="lastName">Last Name: </label>
+        <input type="text" name="lastName" placeholder="Enter your Last Name">
         <br>
-        <input type="email" name="" id="">
+        
+        <input type="password" name="" id="" placeholder="Enter your Password">
+        <!-- if the type is changed to text by inspect element functionality, the password is visible -->
+        <!-- document.getElementById(id).value in the js console of the browser is another way that the password becomes visible -->
+        <!-- passwords can be accessed by browser extensions by using javascript because they have access to the browser content -->
         <br>
+        
+        <label for="phnum">Enter Phone Number: </label>
+        <input type="number" name="phnum" disabled>
+        <br>
+        
+        <input type="email" name="" id="" required>
+        <br>
+        
         <input min=100 max=200 type="number" name="" id="">
         <br>
+        
         <input type="date" name="" id="">
         <br>
+        
         <input type="color" name="" id="">
         <br>
+        
         <input type="file" name="" id="">
         <br>
+        
+        <label for="favcolor">Choose Favorite Color:</label>
+		<input type="color" name="favcolor" id="">
+        <br>
+        
         <input type="radio" name="number" id="10"><label for="10">10</label>
         <input type="radio" name="number" id="20"><label for="20">20</label>
         <input type="radio" name="number" id="30"><label for="30">30</label>
@@ -53,6 +75,19 @@
             <option value="20">20</option>
             <option value="30">30</option>
         </select>
+        
+        <input type="submit">
+        <input type="reset">
+        
+        <!-- we can provide an id for each <input> and map them with the for attribute of <label> to synchronise label with inputs. -->
+        
+        <!-- 
+            <form method="GET">    
+            method = "GET" would change the url of the webpage and attach the user-data with the webpage link and send the data to the backend when 
+            we submit the data using the submit button.
+            ? -> corresponds to incoming data. & → separation of each data.
+        -->
+            
     </form>
 
     <form action="https://google.com/search">
